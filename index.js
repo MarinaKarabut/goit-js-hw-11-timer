@@ -4,6 +4,8 @@ const timerHour = countdownTimer.querySelector('[data-value="hours"]')
 const timerMinutes = countdownTimer.querySelector('[data-value="mins"]')
 const timerSeconds = countdownTimer.querySelector('[data-value="secs"]')
 
+let intervalId = null;
+
 class CountdownTimer {
   constructor({selector, targetDate}){
     this.selector = selector;
